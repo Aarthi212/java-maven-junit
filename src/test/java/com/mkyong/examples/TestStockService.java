@@ -30,7 +30,7 @@ public class TestStockService {
     @Test
     public void testAdd() {
         StockService obj = new StockService(100);
-        assertEquals(110, obj.add(10));
+        assertEquals(0, obj.add(10));
         assertEquals(110, obj.add(0));
 
         Assertions.assertThrows(IllegalArgumentException.class, () -> {
